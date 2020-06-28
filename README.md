@@ -1,4 +1,4 @@
-# LizardOS (1.5)
+# LizardOS (1.7) [Iguana]
 Sistema Operacional com modulos baseado em python3
 Criado em 12/02/2017 e lançado em 28/06/2020,o lizardOS e um sistema operacional secundario feito apenas para aprendizado e diversao, possuindo suporte a qualquer script python e integração com lizardmodules
 <center>
