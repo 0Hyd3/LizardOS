@@ -1,6 +1,5 @@
 import sys
 import os
-from gpiozero import CPUTemperature
 import time
 import socket
 import random
