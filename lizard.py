@@ -27,6 +27,7 @@ print("\033[91m                           `.___,'   `.__,'   `.__,'  ")
 
 print("")
 time.sleep(.9)
+
 print(chr(27)+'[2j')
 print('\033c')
 print('\x1bc')
@@ -62,7 +63,38 @@ for x in range(9000):
   print('\033[97m Created By MarkynDev')
   print('\033[97m LizardOS Baseado em Python 3.7')
   print('\033[91m 1.2 \033[97m | \033[92mOPEN-BETA')
+ if res == "modules":
+  print("------------------\033[92mDEVELOPER ZONE\033[97m------------------")
+  print("|                                                |")
+  print('|                  BUILD, RUN                    |')
+  print("|                                                |")
+  print("--------------------------------------------------")
 
+  escl = input('\033[97mDev\033[92m>  	\033[97m')
+  if escl == "run":
+   print('\033[92m#  \033[97mDon`t need ".py" on final of file')
+   pop1 = input("\033[97mModule Name\033[92m> \033[97m")
+   os.system("python3 " + str(pop1) + ".py")
+  if escl == "build":   
+   print('\033[92m#  \033[97mUse this command to create a module to lizardOS ')
+   mod1 = input("\033[97mModule Name\033[92m>      \033[97m")
+   os.mknod(mod1 + ".py")
+  
+   my_file = open(mod1 + ".py", "w")
+   text_list = ["# This is a module for LizardOS\n", "print('Hello World! i am " +mod1+ ".py a module to lizardOS')"] 
+
+   my_file.writelines(text_list) 
+
+   my_file = open(mod1 + ".py")
+
+
+   content = my_file.read()
+
+
+   my_file.close()
+    
+   print('\033[92m#  \033[97mThe module: ' + mod1 + ' is created!')
+   print('\033[91m#  \033[97m Use "run" to view your module')
  if res == "echo":
   res = input("\033[97m ")
 
