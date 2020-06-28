@@ -1,9 +1,10 @@
-        VERSAO ATUAL 1.7 | 28/06/2020
-            (Nome: Iguana)
+        VERSAO ATUAL 1.8 | 28/06/2020
+            (Nome:  Rattlesnake)
 
                Melhorias
  + Bugs retirados
- + Facil Criacao de modules adicionada ao publico
- + Modules atualizados para Python3.7
- + Comando menu "modules" adicionado
- + Executar um modulo com o sistema principal rodando
+ + Comandos de modules e memorys simplificados!
+ + Novos Menus para modules e memorys criados
+ + Reorganizacao de comandos
+ + Criacao de modulos facilitada
+ + Modulos agora utilizando Python 3.7
