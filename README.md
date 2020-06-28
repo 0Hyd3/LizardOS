@@ -15,7 +15,9 @@ Criado em 12/02/2017 e lançado em 28/06/2020,o lizardOS e um sistema operaciona
 - reboot ``#Reinicia o sistema ``
 - explorer ``# Abre o explorador de arquivos proprio do lizard (OBS: PRECISA DO MODULO "EXPLORER.py"``
 - run ``#Inicia um script ou lizardmodule ``
-- set ``#Seta uma variavel ``
-- view ``#Visualiza uma variavel ``
+- set ``#Abre o menu de edicao de uma variavel ``
+- view ``#Abre o menu de visualizacao de uma variavel ``
 - ping ``#Visualiza sua conexao com o endereco ``
 - dir ``#Visualiza a pasta do sistema ``
+- admin ``#Realiza um comando no terminal do sistema principal``
+- module ``#Abre o menu de edicao e criacao de modulos para o sistema``
