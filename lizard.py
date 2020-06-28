@@ -60,9 +60,9 @@ for x in range(9000):
  if res == "sys":
   
 
-  print('\033[97m Created By MarkynDev')
+  print('\033[97m Created By HydeX')
   print('\033[97m LizardOS Baseado em Python 3.7')
-  print('\033[91m 1.2 \033[97m | \033[92mOPEN-BETA')
+  print('\033[91m 1.6 \033[97m | \033[92mAlligator Version')
  if res == "modules":
   print("------------------\033[92mDEVELOPER ZONE\033[97m------------------")
   print("|                                                |")
@@ -155,7 +155,22 @@ for x in range(9000):
    print(memo3)
   	 
   
-  
+ if res == "update":
+    import requests
+    sites = [
+        'https://raw.githubusercontent.com/0Hyd3/LizardOS/master/updates'
+    ]
+    for url in sites:
+        r = requests.get(url)
+        page_source = r.text
+        page_source = page_source.split('\n')
+        print("-------------\033[92mPATCH NOTES\033[97m--------------")
+        print("")
+       
+        for row in page_source[:20]:
+            print(row)
+        print("")
+        print("--------------------------------------")
 
 
  if res == "get":
