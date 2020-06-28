@@ -27,7 +27,6 @@ print("\033[91m                           `.___,'   `.__,'   `.__,'  ")
 
 print("")
 time.sleep(.9)
-
 print(chr(27)+'[2j')
 print('\033c')
 print('\x1bc')
