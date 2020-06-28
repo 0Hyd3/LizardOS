@@ -15,8 +15,8 @@ Crie seu proprio modulo para adicionar funcionalidades e customizações unicas 
 
 - echo ``#Exibe uma mensagem de texto``
 - reboot ``#Reinicia o sistema ``
-- explorer ``# Abre o explorador de arquivos proprio do lizard (OBS: PRECISA DO MODULO "EXPLORER.py"``
-- run ``#Inicia um script ou lizardmodule ``
+- explorer ``# Abre o explorador de arquivos proprio do lizard (OBS: DESATIVADO APOS 1.8.03)"``
+- modrun ``#Inicia um modulo rapidamente ``
 - memorys ``#Abre o menu de edicao de variaveis do sistema ``
 - modules ``#Abre o menu de edicao e criacao de modulos para o sistema``
 - ping ``#Visualiza sua conexao com o endereco ``
