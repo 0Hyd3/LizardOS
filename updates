@@ -1,0 +1,9 @@
+  VERSAO ATUAL 1.6
+(Version: Alligator)
+
+- Melhorias
+ +Bugs retirados
+ +Facil Criacao de modules adicionada ao publico
+ +Modules atualizados para Python3.7
+ +Comando menu "modules" adicionado
+ +Executar um modulo com o sistema principal rodando
