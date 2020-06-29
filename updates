@@ -1,10 +1,9 @@
-        VERSAO ATUAL 1.8 | 28/06/2020
-            (Nome:  Rattlesnake)
+        VERSAO ATUAL 1.9 | 28/06/2020
+            (Nome:  SilverSide)
 
                Melhorias
- + Bugs retirados
- + Comandos de modules e memorys simplificados!
- + Novos Menus para modules e memorys criados
- + Reorganizacao de comandos
- + Criacao de modulos facilitada
- + Modulos agora utilizando Python 3.7
++ Bugs da 1.8 retirados
++ Criacao de modulos facilitada
++ Comandos de acao rapida adicionados
++ Suporte ao getter para baixar modulos
++ Compatibilidade com WIN10
