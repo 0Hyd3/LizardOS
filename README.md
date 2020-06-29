@@ -13,6 +13,7 @@ Crie seu proprio modulo para adicionar funcionalidades e customizações unicas 
 
 # Comandos
 
+- upgrade ``#Exibe atualizacoes sobre o projeto``
 - echo ``#Exibe uma mensagem de texto``
 - reboot ``#Reinicia o sistema ``
 - explorer ``# Abre o explorador de arquivos proprio do lizard (OBS: DESATIVADO APOS 1.8.03)"``
