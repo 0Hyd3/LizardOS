@@ -55,14 +55,42 @@ for x in range(9000):
 
   print('\033[97m Created By Marcus V')
   print('\033[97m LizardOS Modular Baseado em Python 3.7')
-  print('\033[91m 1.8 \033[97m | \033[92mRattlesnake Version')
+  print('\033[91m 1.9 \033[97m | \033[92mSilverSide Version')
+ if res == "modules build":
+   print('\033[92m#  \033[97mUse this command to create a module to lizardOS ')
+   print(chr(27)+'[2j')
+   print('\033c')
+   print('\x1bc')
+   mod1 = input("\033[97mModule Name\033[92m>      \033[97m")
+   os.mknod(mod1 + ".module")
+
+   my_file = open(mod1 + ".module", "w")
+   text_list = ["# This is a module for LizardOS\n", "print('Hello World! i am " +mod1+ " a module to lizardOS')"] 
+
+   my_file.writelines(text_list) 
+
+   my_file = open(mod1 + ".module")
+
+
+   content = my_file.read()
+
+
+   my_file.close()
+    
+   print('\033[92m#  \033[97mThe module: ' + mod1 + ' is created!')
+   print('\033[91m#  \033[97m Use "run" to view your module')
+	 
+	
+	
+	
+
  if res == "modules":
 	 # ═╣ ╠═
   print("╔═════════════════ \033[92mDEVELOPER ZONE \033[97m═════════════════╗")
   print("║                                                  ║")
   print("╠══════════════════════════════════════════════════╣")
   print("║                                                  ║")
-  print('║             Build , Run , Import[OFF]            ║')
+  print('║         Build , Run , Import[OFF] , \033[91mCancel\033[97m       ║')
   print("║                                                  ║")
   print("╚══════════════════════════════════════════════════╝")
 
@@ -71,7 +99,9 @@ for x in range(9000):
    print(chr(27)+'[2j')
    print('\033c')
    print('\x1bc')
-   print('\033[92m#  \033[97mDon`t need ".mod" on final of file')
+   os.system("dir")
+   print("")
+   print('\033[92m#  \033[97mDon`t need ".module" on final of file')
    pop1 = input("\033[97mModule Name\033[92m> \033[97m")
    os.rename(str(pop1) + ".module",str(pop1) + ".py")
    os.system("python3 " + str(pop1) + ".py")
@@ -105,7 +135,7 @@ for x in range(9000):
   res = input("\033[97m ")
   
   
- if res == "modrun":
+ if res == "modules run":
   print(chr(27)+'[2j')
   print('\033c')
   print('\x1bc')
@@ -136,7 +166,7 @@ for x in range(9000):
   print("║                                                  ║")
   print("╠══════════════════════════════════════════════════╣")
   print("║                                                  ║")
-  print('║             Edit , View , Import[OFF]            ║')
+  print('║         Edit , View , Import[OFF] , \033[91mCancel\033[97m       ║')
   print("║                                                  ║")
   print("╚══════════════════════════════════════════════════╝")
 
@@ -144,11 +174,13 @@ for x in range(9000):
   print(chr(27)+'[2j')
   print('\033c')
   print('\x1bc')
+  if escl == "getter":
+   os.system("python3 getter.py")
   if escl == "edit":
   
    print("╔══════════════════════\033[92m EDIT \033[97m══════════════════════╗")
    print("║                                                  ║")
-   print('║        memo1, memo2, memo3, cursor(STRING)       ║')
+   print('║       memo1, memo2, memo3, cursor, \033[91mcancel\033[97m        ║')
    print("║                                                  ║")
    print("╚══════════════════════════════════════════════════╝") 
    
@@ -169,6 +201,9 @@ for x in range(9000):
    print('\033c')
    print('\x1bc')
   if escl == "view":
+   print(chr(27)+'[2j')
+   print('\033c')
+   print('\x1bc')	 
    print("╔══════════════════════\033[92m VIEW \033[97m══════════════════════╗")
    print("║                                                  ║")
    print('║        memo1, memo2, memo3, cursor(STRING)       ║')
@@ -181,9 +216,7 @@ for x in range(9000):
     print(memo2)
    if escl == "memo3":   
     print(memo3)
-   print(chr(27)+'[2j')
-   print('\033c')
-   print('\x1bc')	  
+    
   
  if res == "update":
     import requests
@@ -201,23 +234,17 @@ for x in range(9000):
             print(row)
         print("")
         print("--------------------------------------")
-
-
- if res == "get":
-  url = input('\033[97mDownload-URL\033[92m> \033[97m')
-  print("\033[91m#\033[97m Ex: 'file.extension'")
-  fileName = input('\033[97mFile-Name\033[92m> \033[97m')
-  print("\033[91m[+]\033[97m Baixando...")
-
-  req = requests.get(url)
-  file = open("get.crypt", 'wb')
-  for chunk in req.iter_content(100000):
-   file.write(chunk)
-  file.close()
-  print("\033[91m[+]\033[97m Criptografando Arquivo")
-  time.sleep(.9)
-  print("\033[91m[+]\033[97m Finalizando Arquivo")
-  os.rename(r'get.crypt',fileName)
-  time.sleep(.5)
-  print("\033[91m[+]\033[97m Arquivo Baixado")
-
+ if res == "help":
+  print("------------------------------------\033[94mHelp Me\033[97m------------------------------------")
+  print("\033[97m echo \033[92m#Escreve algo no terminal ")
+  print("\033[97m clear \033[92m#Limpa o terminal ")
+  print("\033[97m modules \033[92m#Abre o menu de gerenciamento de modulos do sistema ")
+  print("\033[97m getter \033[92m#Abre a loja de modulos (NECESSARIO ESTAR INSTALADA)")
+  print("\033[97m memorys \033[92m#Abre o menu de gerenciamento de variaveis do sistema ")
+  print("\033[97m ping \033[92m#Verifica sua conexao com outros servicos ")
+  print("\033[97m reboot \033[92m#Reinicia o lizard (DEV-MODE) ")
+  print("\033[97m sys \033[92m#Descricao da versao atual do seu sistema ")
+  print("\033[97m update \033[92m#Verifica se ha uma versao mais nova")
+  print("\033[97m-------------------------------------------------------------------------------")
+  
+  
