@@ -1,4 +1,4 @@
-# LizardOS (1.8) [Rattlesnake]
+# LizardOS (1.9 [SilverSide]
 Sistema Operacional com modulos baseado em python3
 Criado em 12/02/2017 e lançado em 28/06/2020,o lizardOS e um sistema operacional secundario feito apenas para aprendizado e diversao, possuindo suporte a qualquer script python e integração com lizardmodules
 
@@ -14,10 +14,11 @@ Crie seu proprio modulo para adicionar funcionalidades e customizações unicas 
 # Comandos
 
 - upgrade ``#Exibe atualizacoes sobre o projeto``
+- sys ``#Exibe informacoes sobre a sua versao``
+- getter  ``#Abre a loja de modulos (NECESSARIO TER BAIXADO O GETTER)``
 - echo ``#Exibe uma mensagem de texto``
 - reboot ``#Reinicia o sistema ``
 - explorer ``# Abre o explorador de arquivos proprio do lizard (OBS: DESATIVADO APOS 1.8.03)"``
-- modrun ``#Inicia um modulo rapidamente ``
 - memorys ``#Abre o menu de edicao de variaveis do sistema ``
 - modules ``#Abre o menu de edicao e criacao de modulos para o sistema``
 - ping ``#Visualiza sua conexao com o endereco ``
